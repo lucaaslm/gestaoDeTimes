@@ -27,4 +27,8 @@ public class JogadorService {
 	public List<Jogador> getTodosJogadores(){
 		return repo.findAll();
 	}
+	
+	public List<Jogador> getJogadoresSemTime(){
+		return repo.buscarJogadoresSemTime();
+	}
 }
